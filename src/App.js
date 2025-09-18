@@ -5,9 +5,10 @@ import { useState } from 'react';
 function App() {
   const[story,setStory]=useState();
   const[city,setCity]=useState();
-  const apiurl="https://weatherappbackend4.onrender.com";
+  
 
   async function FetchStory(){
+    const apiurl="https://weatherappbackend4.onrender.com";
     try{
     const response=await fetch(`${apiurl}/api/weather/${city}`);
     if(!response.ok){
