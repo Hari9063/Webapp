@@ -36,3 +36,86 @@
     transform: rotate(360deg);
   }
 }
+/* Fullscreen gradient background */
+.app {
+  min-height: 100vh;
+  background: linear-gradient(to right, #6dd5fa, #2980b9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Container */
+.weather-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+/* Title */
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f9f9f9;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Input + Button */
+.input-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 65%;
+  font-size: 1rem;
+}
+
+.input-box button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #ff9a9e;
+  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-box button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  color: white;
+}
+
+/* Story Card */
+.story-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: inset 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+.story-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffeaa7;
+}
+
+.story-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
